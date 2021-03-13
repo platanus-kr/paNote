@@ -1,34 +1,35 @@
 @charset "UTF-8";
 /*
-	Theme Name: Mynote
-	Theme URI: https://terryl.in/en/repository/mynote/
+	Theme Name: paNote
+	Theme URI: https://git.canxan.com/platanus/paNote
 	Requires at least: 3.6
 	Tested up to: 5.7.0
 	Requires PHP: 5.2.4
-	Description: Mynote is a responsive, clean, Markdown friendly WordPress blog theme. It is based on Bootstrap 4 and Fontawesome 5. It is suitable for programming, business, technical, professional, niche and any kind of blogging sites. Mynote has landing-page templates so that can your highly customize your homepage, make your website unique and professional.
-	Version: 2.0.0
-	Author: Terry Lin
-	Author URI: https://terryl.in
+	Description: fork MyNote
+	Version: 0.1.0
+	Author: Platanus(origin. Terry Lin)
+	Author URI: 
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, custom-colors, custom-header, featured-images, featured-image-header, microformats, theme-options, footer-widgets, threaded-comments, translation-ready, blog, entertainment
 	License: GNU General Public License v3 or later
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Text Domain: mynote
+	Text Domain: panote
 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Ubuntu+Mono&display=swap");
 ::selection {
-  background: #04A4CC;
-  color: #FFF;
+  background: #04a4cc;
+  color: #fff;
   text-shadow: none;
 }
 
 ::-webkit-selection {
-  background: #04A4CC;
-  color: #FFF;
+  background: #04a4cc;
+  color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #04A4CC;
-  color: #FFF;
+  background: #04a4cc;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -92,7 +93,7 @@ article figcaption {
   word-wrap: break-word;
 }
 .category-header h1:before {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   border: 0px #dddddd solid;
   border-radius: 5px;
   width: 48px;
@@ -107,34 +108,59 @@ article figcaption {
   margin-right: 10px;
   line-height: 48px;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
   padding-right: 5px;
-  text-shadow: rgba(102, 102, 102, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.6) 0 2px 1px;
-  background-image: -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.1) 7.5%), -webkit-repeating-linear-gradient(left, transparent 0%, transparent 4%, rgba(0, 0, 0, 0.03) 4.5%), -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 1.2%, rgba(255, 255, 255, 0.15) 2.2%), linear-gradient(180deg, #c7c7c7 0%, #e6e6e6 47%, #c7c7c7 53%, #b3b3b3 100%);
+  text-shadow: rgba(102, 102, 102, 0.5) 0 -1px 0,
+    rgba(255, 255, 255, 0.6) 0 2px 1px;
+  background-image: -webkit-repeating-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 6%,
+      rgba(255, 255, 255, 0.1) 7.5%
+    ),
+    -webkit-repeating-linear-gradient(left, transparent 0%, transparent 4%, rgba(
+            0,
+            0,
+            0,
+            0.03
+          )
+          4.5%),
+    -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(
+            255,
+            255,
+            255,
+            0
+          )
+          1.2%, rgba(255, 255, 255, 0.15) 2.2%),
+    linear-gradient(180deg, #c7c7c7 0%, #e6e6e6 47%, #c7c7c7 53%, #b3b3b3 100%);
   color: #333333;
-  box-shadow: inset rgba(38, 38, 38, 0.2) 0 0px 0px 1px, inset rgba(38, 38, 38, 0.2) 0 -1px 1px 1px, inset rgba(0, 0, 0, 0.25) 0 -1px 0px 2px, inset rgba(255, 255, 255, 0.7) 0 1px 0px 2px, rgba(0, 0, 0, 0.15) 0 -1px 1px 1px, rgba(255, 255, 255, 0.5) 0 1px 1px 1px;
+  box-shadow: inset rgba(38, 38, 38, 0.2) 0 0px 0px 1px,
+    inset rgba(38, 38, 38, 0.2) 0 -1px 1px 1px,
+    inset rgba(0, 0, 0, 0.25) 0 -1px 0px 2px,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0px 2px,
+    rgba(0, 0, 0, 0.15) 0 -1px 1px 1px, rgba(255, 255, 255, 0.5) 0 1px 1px 1px;
   /* outer HL */
 }
 .category-header h1.category:before {
-  content: '\f0c6';
+  content: "\f0c6";
 }
 .category-header h1.archive:before {
-  content: '\f1c6';
+  content: "\f1c6";
 }
 .category-header h1.tag:before {
-  content: '\f02c';
+  content: "\f02c";
 }
 .category-header h1.git:before {
-  content: '\f1d3';
+  content: "\f1d3";
 }
 .category-header h1.search:before {
-  content: '\f002';
+  content: "\f002";
 }
 .category-header h1.user:before {
-  content: '\f007';
+  content: "\f007";
 }
 .category-header h1.error-404:before {
-  content: '\f071';
+  content: "\f071";
 }
 .category-header h1 .badge {
   font-size: 0.81rem;
@@ -147,12 +173,12 @@ article figcaption {
 .single-post-title-bar {
   background-color: #24292e;
   color: #c8c9ca;
-  font-weight: 600;
+  font-weight: 700;
   display: none;
   transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
   transform-origin: top;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 .single-post-title-bar.fixed-top {
   z-index: 100001;
@@ -224,7 +250,7 @@ article figcaption {
   background-image: linear-gradient(-180deg, #dddddd 0%, #ffffff 90%);
 }
 .tags a:before {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   content: "\f02b";
   font-size: 13px;
   font-weight: 900;
@@ -253,7 +279,7 @@ article figcaption {
 }
 .card-text-fade-out .effect-layer {
   position: absolute;
-  content: ' ';
+  content: " ";
   bottom: 0;
   left: 0;
   width: 100%;
@@ -264,7 +290,13 @@ article figcaption {
   z-index: 2;
   margin: 0;
   padding: 0 0 20px 0;
-  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9), white);
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.9),
+    white
+  );
 }
 
 .card-body-footer {
@@ -326,7 +358,7 @@ article figcaption {
   left: 50%;
   width: 50px;
   height: 50px;
-  opacity: .9;
+  opacity: 0.9;
   overflow: hidden;
   display: none;
 }
@@ -463,17 +495,17 @@ article figcaption {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: .4em !important;
+  margin-left: 0.4em !important;
   vertical-align: middle !important;
   content: "";
-  border-top: .3em solid;
-  border-right: .3em solid transparent;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
   border-bottom: 0;
-  border-left: .3em solid transparent;
+  border-left: 0.3em solid transparent;
 }
 .header .navbar-nav .dropdown-menu {
   min-width: 10rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   margin: 6px 0 0;
   font-size: 1rem;
   color: #212529;
@@ -497,7 +529,7 @@ article figcaption {
     top: -8px;
   }
   .header .navbar-nav .dropdown-menu::after {
-    border-bottom: 8px solid #FFFFFF;
+    border-bottom: 8px solid #ffffff;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
     content: "";
@@ -508,11 +540,11 @@ article figcaption {
   }
 }
 .header .navbar-nav .dropdown-item {
-  font-weight: 600;
+  font-weight: 700;
 }
 .header .menu-item a {
   display: block;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .has-site-logo .navbar-brand {
@@ -547,7 +579,8 @@ article figcaption {
   display: flex;
   justify-content: space-between;
 }
-.footer .footer-columns a, .footer .footer-columns strong {
+.footer .footer-columns a,
+.footer .footer-columns strong {
   font-weight: normal;
   color: #333333;
 }
@@ -734,7 +767,7 @@ article figcaption {
 
 /* Typography */
 .header {
-  font-weight: 600;
+  font-weight: 700;
 }
 .header .search-bar {
   font-size: inherit;
@@ -748,9 +781,10 @@ article figcaption {
 
 /* Typography - Single post page */
 #post-title {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important;
+  /* font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", */
+  /* "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important; */
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0.5rem 0;
 }
 @media (max-width: 575.98px) {
@@ -761,15 +795,16 @@ article figcaption {
 
 /* Typography - Home page */
 .section-intro {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important;
-  font-weight: 300;
+  /* font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important; */
+  font-weight: 400;
 }
 .section-intro a {
   font-weight: 400;
 }
 .section-intro h1 {
   font-size: 4.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 767.98px) {
   .section-intro h1 {
@@ -783,7 +818,7 @@ article figcaption {
 /* Typography - Comment */
 .comment-wrapper cite {
   font-style: normal !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 .comment-wrapper .comment-body {
   font-size: 14px;
@@ -804,7 +839,7 @@ article figcaption {
 
 /* Typography - Others */
 .label {
-  font-size: .675rem;
+  font-size: 0.675rem;
 }
 
 .x-label {
@@ -825,46 +860,120 @@ article figcaption {
 }
 
 /* Use the best fit font for different languages */
-:lang(en) body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+/* :lang(en) body {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
-:lang(en) h1, :lang(en) h2, :lang(en) h3, :lang(en) h4, :lang(en) h5, :lang(en) h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+:lang(en) h1,
+:lang(en) h2,
+:lang(en) h3,
+:lang(en) h4,
+:lang(en) h5,
+:lang(en) h6 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
-:lang(en) .section-intro, :lang(en) #post-title, :lang(en) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+:lang(en) .section-intro,
+:lang(en) #post-title,
+:lang(en) .site-info {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
 
 :lang(zh) body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "微軟正黑體", "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "標楷體", "DFKai-SB";
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "微軟正黑體",
+    "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "文泉驛正黑",
+    "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "標楷體", "DFKai-SB";
 }
-:lang(zh) h1, :lang(zh) h2, :lang(zh) h3, :lang(zh) h4, :lang(zh) h5, :lang(zh) h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB";
+:lang(zh) h1,
+:lang(zh) h2,
+:lang(zh) h3,
+:lang(zh) h4,
+:lang(zh) h5,
+:lang(zh) h6 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑",
+    "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體",
+    "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB";
 }
-:lang(zh) .section-intro, :lang(zh) #post-title, :lang(zh) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB";
+:lang(zh) .section-intro,
+:lang(zh) #post-title,
+:lang(zh) .site-info {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑",
+    "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體",
+    "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB";
 }
 
 :lang(ja) body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ",
+    "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
 }
-:lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) h4, :lang(ja) h5, :lang(ja) h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+:lang(ja) h1,
+:lang(ja) h2,
+:lang(ja) h3,
+:lang(ja) h4,
+:lang(ja) h5,
+:lang(ja) h6 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ",
+    "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
 }
-:lang(ja) .section-intro, :lang(ja) #post-title, :lang(ja) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+:lang(ja) .section-intro,
+:lang(ja) #post-title,
+:lang(ja) .site-info {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ",
+    "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
 }
 
 :lang(ko) body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
 }
-:lang(ko) h1, :lang(ko) h2, :lang(ko) h3, :lang(ko) h4, :lang(ko) h5, :lang(ko) h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
+:lang(ko) h1,
+:lang(ko) h2,
+:lang(ko) h3,
+:lang(ko) h4,
+:lang(ko) h5,
+:lang(ko) h6 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
 }
-:lang(ko) .section-intro, :lang(ko) #post-title, :lang(ko) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
-}
+:lang(ko) .section-intro,
+:lang(ko) #post-title,
+:lang(ko) .site-info {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
+} */
 
+body {
+  font-family: "Noto Sans KR", "-apple-system", "BlinkMacSystemFont",
+    "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "맑은 고딕", "Malgun Gothic", "Dotum", "Gulim";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans KR", "-apple-system", "BlinkMacSystemFont",
+    "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "맑은 고딕", "Malgun Gothic", "Dotum", "Gulim";
+}
+.section-intro,
+#post-title,
+.site-info {
+  font-family: "Noto Sans KR", "-apple-system", "BlinkMacSystemFont",
+    "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "맑은 고딕", "Malgun Gothic", "Dotum", "Gulim";
+}
 /* Sidebar widgets */
 .sidebar .widget {
   border-bottom: 1px #ddd solid;
@@ -897,7 +1006,9 @@ article figcaption {
   background-color: #ffffff;
   color: #333333;
 }
-.widget_calendar table th, .widget_calendar table td, .widget_calendar table caption {
+.widget_calendar table th,
+.widget_calendar table td,
+.widget_calendar table caption {
   text-align: center;
   padding: 5px;
 }
@@ -964,7 +1075,7 @@ article figcaption {
   display: inline-block;
   padding: 3px 10px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 20px;
   white-space: nowrap;
   vertical-align: middle;
@@ -997,7 +1108,7 @@ article figcaption {
   float: left;
   padding: 3px 10px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 20px;
   color: #24292e;
   vertical-align: middle;
@@ -1030,10 +1141,12 @@ article figcaption {
   font-size: 0;
   display: flex;
 }
-.post-mynote-buttons a, .post-mynote-buttons a:hover {
+.post-mynote-buttons a,
+.post-mynote-buttons a:hover {
   text-decoration: none !important;
 }
-.post-mynote-buttons > div, .post-mynote-buttons > a {
+.post-mynote-buttons > div,
+.post-mynote-buttons > a {
   margin-left: 5px !important;
 }
 .post-mynote-buttons .github-button-container {
@@ -1051,31 +1164,34 @@ article figcaption {
   color: #ffffff;
 }
 
-a.btn, a.button-like-link {
+a.btn,
+a.button-like-link {
   text-decoration: none !important;
 }
 a.btn-xs {
-  padding: .125rem .25rem;
-  font-size: .675rem;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.675rem;
   line-height: 1.2;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 a.btn-info {
   color: #17a2b8;
 }
 
 .label {
-  padding: .125rem .25rem;
+  padding: 0.125rem 0.25rem;
   line-height: 1.2;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
 }
-.label.label-success, .label.label-cat {
+.label.label-success,
+.label.label-cat {
   color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
 }
-.label.label-warning, .label.label-tag {
+.label.label-warning,
+.label.label-tag {
   color: #856404;
   background-color: #fff3cd;
   border-color: #ffeeba;
@@ -1107,9 +1223,9 @@ a.btn-info {
 }
 
 .x-label {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   line-height: 1.5;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border: 1px solid transparent;
   margin: 5px;
   word-break: keep-all !important;
@@ -1277,7 +1393,7 @@ a.btn-info {
   width: calc(100% - 50px);
 }
 
-nav[data-toggle='toc'] .nav > li > a {
+nav[data-toggle="toc"] .nav > li > a {
   display: block;
   padding: 4px 20px;
   font-size: 14px;
@@ -1285,8 +1401,8 @@ nav[data-toggle='toc'] .nav > li > a {
   color: #767676;
 }
 
-nav[data-toggle='toc'] .nav > li > a:hover,
-nav[data-toggle='toc'] .nav > li > a:focus {
+nav[data-toggle="toc"] .nav > li > a:hover,
+nav[data-toggle="toc"] .nav > li > a:focus {
   padding-left: 19px;
   color: dodgerblue;
   text-decoration: none;
@@ -1294,9 +1410,9 @@ nav[data-toggle='toc'] .nav > li > a:focus {
   border-left: 2px solid dodgerblue;
 }
 
-nav[data-toggle='toc'] .nav-link.active,
-nav[data-toggle='toc'] .nav-link.active:hover,
-nav[data-toggle='toc'] .nav-link.active:focus {
+nav[data-toggle="toc"] .nav-link.active,
+nav[data-toggle="toc"] .nav-link.active:hover,
+nav[data-toggle="toc"] .nav-link.active:focus {
   padding-left: 18px;
   font-weight: bold;
   color: dodgerblue;
@@ -1305,13 +1421,13 @@ nav[data-toggle='toc'] .nav-link.active:focus {
 }
 
 /* Nav: second level (shown on .active) */
-nav[data-toggle='toc'] .nav-link + ul {
+nav[data-toggle="toc"] .nav-link + ul {
   /* display: none; */
   /* Hide by default, but at >768px, show it */
   padding-bottom: 10px;
 }
 
-nav[data-toggle='toc'] .nav .nav > li > a {
+nav[data-toggle="toc"] .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
@@ -1319,19 +1435,19 @@ nav[data-toggle='toc'] .nav .nav > li > a {
   font-weight: normal;
 }
 
-nav[data-toggle='toc'] .nav .nav > li > a:hover,
-nav[data-toggle='toc'] .nav .nav > li > a:focus {
+nav[data-toggle="toc"] .nav .nav > li > a:hover,
+nav[data-toggle="toc"] .nav .nav > li > a:focus {
   padding-left: 27px;
 }
 
-nav[data-toggle='toc'] .nav .nav > li > .active,
-nav[data-toggle='toc'] .nav .nav > li > .active:hover,
-nav[data-toggle='toc'] .nav .nav > li > .active:focus {
+nav[data-toggle="toc"] .nav .nav > li > .active,
+nav[data-toggle="toc"] .nav .nav > li > .active:hover,
+nav[data-toggle="toc"] .nav .nav > li > .active:focus {
   padding-left: 27px;
   font-weight: 500;
 }
 
-nav[data-toggle='toc'] .nav-link.active + ul {
+nav[data-toggle="toc"] .nav-link.active + ul {
   display: block;
 }
 
@@ -1463,7 +1579,8 @@ nav[data-toggle='toc'] .nav-link.active + ul {
   font-size: 0.813rem !important;
   border-radius: 0 !important;
 }
-.breadcrumb ul, .breadcrumb li {
+.breadcrumb ul,
+.breadcrumb li {
   margin: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -1652,8 +1769,8 @@ p > object:only-child {
 /* > 992px */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .menu-item a {
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 /* 992px - 1199.98px */
@@ -1747,7 +1864,7 @@ p > object:only-child {
     background-image: url("./assets/images/bg_circuit_lg.png");
   }
   .section-intro h1 {
-    font-size: 4.0rem;
+    font-size: 4rem;
   }
   .section-intro .desc-text {
     font-size: 1.4rem;
@@ -1849,7 +1966,9 @@ p > object:only-child {
   height: 0;
   overflow: hidden;
 }
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -1857,7 +1976,7 @@ p > object:only-child {
   height: 100%;
 }
 
-nav[data-toggle=toc] .nav > li > a {
+nav[data-toggle="toc"] .nav > li > a {
   display: block;
   padding: 4px 20px;
   font-size: 13px;
@@ -1865,8 +1984,8 @@ nav[data-toggle=toc] .nav > li > a {
   color: #767676;
 }
 
-nav[data-toggle=toc] .nav > li > a:focus,
-nav[data-toggle=toc] .nav > li > a:hover {
+nav[data-toggle="toc"] .nav > li > a:focus,
+nav[data-toggle="toc"] .nav > li > a:hover {
   padding-left: 19px;
   color: #563d7c;
   text-decoration: none;
@@ -1874,9 +1993,9 @@ nav[data-toggle=toc] .nav > li > a:hover {
   border-left: 1px solid #563d7c;
 }
 
-nav[data-toggle=toc] .nav-link.active,
-nav[data-toggle=toc] .nav-link.active:focus,
-nav[data-toggle=toc] .nav-link.active:hover {
+nav[data-toggle="toc"] .nav-link.active,
+nav[data-toggle="toc"] .nav-link.active:focus,
+nav[data-toggle="toc"] .nav-link.active:hover {
   padding-left: 18px;
   font-weight: 700;
   color: #563d7c;
@@ -1884,12 +2003,12 @@ nav[data-toggle=toc] .nav-link.active:hover {
   border-left: 2px solid #563d7c;
 }
 
-nav[data-toggle=toc] .nav-link + ul {
+nav[data-toggle="toc"] .nav-link + ul {
   display: none;
   padding-bottom: 10px;
 }
 
-nav[data-toggle=toc] .nav .nav > li > a {
+nav[data-toggle="toc"] .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
@@ -1897,25 +2016,26 @@ nav[data-toggle=toc] .nav .nav > li > a {
   font-weight: 400;
 }
 
-nav[data-toggle=toc] .nav .nav > li > a:focus,
-nav[data-toggle=toc] .nav .nav > li > a:hover {
+nav[data-toggle="toc"] .nav .nav > li > a:focus,
+nav[data-toggle="toc"] .nav .nav > li > a:hover {
   padding-left: 29px;
 }
 
-nav[data-toggle=toc] .nav .nav > li > .active,
-nav[data-toggle=toc] .nav .nav > li > .active:focus,
-nav[data-toggle=toc] .nav .nav > li > .active:hover {
+nav[data-toggle="toc"] .nav .nav > li > .active,
+nav[data-toggle="toc"] .nav .nav > li > .active:focus,
+nav[data-toggle="toc"] .nav .nav > li > .active:hover {
   padding-left: 28px;
   font-weight: 500;
 }
 
-nav[data-toggle=toc] .nav-link.active + ul {
+nav[data-toggle="toc"] .nav-link.active + ul {
   display: block;
 }
 
 @font-face {
   font-family: octicons-link;
-  src: url(data:font/woff;charset=utf-8;base64,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) format("woff");
+  src: url(data:font/woff;charset=utf-8;base64,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)
+    format("woff");
 }
 .markdown-body {
   -ms-text-size-adjust: 100%;
@@ -1932,13 +2052,16 @@ nav[data-toggle=toc] .nav-link.active + ul {
 .markdown-body .pl-c {
   color: #6a737d;
 }
-.markdown-body .pl-c1, .markdown-body .pl-s .pl-v {
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
   color: #005cc5;
 }
-.markdown-body .pl-e, .markdown-body .pl-en {
+.markdown-body .pl-e,
+.markdown-body .pl-en {
   color: #6f42c1;
 }
-.markdown-body .pl-smi, .markdown-body .pl-s .pl-s1 {
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
   color: #24292e;
 }
 .markdown-body .pl-ent {
@@ -1947,16 +2070,21 @@ nav[data-toggle=toc] .nav-link.active + ul {
 .markdown-body .pl-k {
   color: #d73a49;
 }
-.markdown-body .pl-s, .markdown-body .pl-pds, .markdown-body .pl-s .pl-pse .pl-s1 {
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1 {
   color: #032f62;
 }
 .markdown-body .pl-sr {
   color: #032f62;
 }
-.markdown-body .pl-sr .pl-cce, .markdown-body .pl-sr .pl-sre, .markdown-body .pl-sr .pl-sra {
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
   color: #032f62;
 }
-.markdown-body .pl-v, .markdown-body .pl-smw {
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
   color: #e36209;
 }
 .markdown-body .pl-bu {
@@ -2038,7 +2166,8 @@ nav[data-toggle=toc] .nav-link.active + ul {
 .markdown-body a {
   background-color: transparent;
 }
-.markdown-body a:active, .markdown-body a:hover {
+.markdown-body a:active,
+.markdown-body a:hover {
   outline-width: 0;
 }
 .markdown-body strong {
@@ -2085,7 +2214,7 @@ nav[data-toggle=toc] .nav-link.active + ul {
   text-decoration: underline;
 }
 .markdown-body strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body hr {
   height: 0;
@@ -2108,36 +2237,42 @@ nav[data-toggle=toc] .nav-link.active + ul {
   border-spacing: 0;
   border-collapse: collapse;
 }
-.markdown-body td, .markdown-body th {
+.markdown-body td,
+.markdown-body th {
   padding: 0;
 }
-.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
 .markdown-body h1 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h2 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h5 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h6 {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body p {
   margin-top: 0;
@@ -2162,10 +2297,12 @@ nav[data-toggle=toc] .nav-link.active + ul {
 .markdown-body ul ol {
   list-style-type: lower-roman;
 }
-.markdown-body ul ul ol, .markdown-body ul ol ol {
+.markdown-body ul ul ol,
+.markdown-body ul ol ol {
   list-style-type: lower-alpha;
 }
-.markdown-body ol ul ol, .markdown-body ol ol ol {
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
   list-style-type: lower-alpha;
 }
 .markdown-body dd {
@@ -2223,7 +2360,13 @@ nav[data-toggle=toc] .nav-link.active + ul {
 .markdown-body .anchor:focus {
   outline: none;
 }
-.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -2258,21 +2401,41 @@ nav[data-toggle=toc] .nav-link.active + ul {
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #959da5;
 }
-.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
   margin-top: 24px;
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
 }
-.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
   color: #1b1f23;
   vertical-align: middle;
   visibility: hidden;
 }
-.markdown-body h1:hover .anchor, .markdown-body h2:hover .anchor, .markdown-body h3:hover .anchor, .markdown-body h4:hover .anchor, .markdown-body h5:hover .anchor, .markdown-body h6:hover .anchor {
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
   text-decoration: none;
 }
-.markdown-body h1:hover .anchor .octicon-link, .markdown-body h2:hover .anchor .octicon-link, .markdown-body h3:hover .anchor .octicon-link, .markdown-body h4:hover .anchor .octicon-link, .markdown-body h5:hover .anchor .octicon-link, .markdown-body h6:hover .anchor .octicon-link {
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
   visibility: visible;
 }
 .markdown-body h1 {
@@ -2298,14 +2461,17 @@ nav[data-toggle=toc] .nav-link.active + ul {
   font-size: 0.85em;
   color: #6a737d;
 }
-.markdown-body ul, .markdown-body ol {
+.markdown-body ul,
+.markdown-body ol {
   padding-left: 2em;
 }
-.markdown-body ul ul, .markdown-body ul ol {
+.markdown-body ul ul,
+.markdown-body ul ol {
   margin-top: 0;
   margin-bottom: 0;
 }
-.markdown-body ol ol, .markdown-body ol ul {
+.markdown-body ol ol,
+.markdown-body ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2326,7 +2492,7 @@ nav[data-toggle=toc] .nav-link.active + ul {
   margin-top: 16px;
   font-size: 1em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body dl dd {
   padding: 0 16px;
@@ -2338,7 +2504,7 @@ nav[data-toggle=toc] .nav-link.active + ul {
   overflow: auto;
 }
 .markdown-body table th {
-  font-weight: 600;
+  font-weight: 700;
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
@@ -2358,10 +2524,10 @@ nav[data-toggle=toc] .nav-link.active + ul {
   box-sizing: content-box;
   background-color: #fff;
 }
-.markdown-body img[align=right] {
+.markdown-body img[align="right"] {
   padding-left: 20px;
 }
-.markdown-body img[align=left] {
+.markdown-body img[align="left"] {
   padding-right: 20px;
 }
 .markdown-body .full-commit .btn-outline:not(:disabled):hover {
@@ -2371,7 +2537,8 @@ nav[data-toggle=toc] .nav-link.active + ul {
 .markdown-body kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 11px "Ubuntu Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    Courier, monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -2401,14 +2568,17 @@ nav[data-toggle=toc] .nav-link.active + ul {
 }
 
 code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  /* check ubuntu mono*/
+  font-family: "Ubuntu Mono", "SFMono-Regular", Consolas, "Liberation Mono",
+    Menlo, Courier, monospace;
   font-size: 12px;
 }
 
 pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Ubuntu Mono", "SFMono-Regular", Consolas, "Liberation Mono",
+    Menlo, Courier, monospace;
   font-size: 12px;
 }
 
