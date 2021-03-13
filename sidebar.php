@@ -17,7 +17,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) && ! is_active_sidebar( 'sidebar-3' ) ) 
 ?>
 
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	<div id="sidebar" class="sidebar">
+	<div id="sidebar" class="sidebar sticky-top sticky-offset">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div>
 <?php endif; ?>
