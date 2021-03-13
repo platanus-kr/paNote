@@ -12,7 +12,7 @@
 	Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, custom-colors, custom-header, featured-images, featured-image-header, microformats, theme-options, footer-widgets, threaded-comments, translation-ready, blog, entertainment
 	License: GNU General Public License v3 or later
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Text Domain: panote
+	Text Domain: mynote
 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Ubuntu+Mono&display=swap");
 ::selection {
@@ -860,7 +860,7 @@ article figcaption {
 }
 
 /* Use the best fit font for different languages */
-/* :lang(en) body {
+:lang(en) body {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
     "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
@@ -950,8 +950,8 @@ article figcaption {
 :lang(ko) .site-info {
   font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
     "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
-} */
-
+}
+/* 
 body {
   font-family: "Noto Sans KR", "-apple-system", "BlinkMacSystemFont",
     "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
@@ -973,7 +973,8 @@ h6 {
   font-family: "Noto Sans KR", "-apple-system", "BlinkMacSystemFont",
     "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
     "맑은 고딕", "Malgun Gothic", "Dotum", "Gulim";
-}
+} */
+
 /* Sidebar widgets */
 .sidebar .widget {
   border-bottom: 1px #ddd solid;
@@ -1069,7 +1070,7 @@ h6 {
   display: inline-block;
 }
 .btn-counter .btn {
-  float: left;
+  /* float: left; */
   color: #24292e;
   position: relative;
   display: inline-block;
