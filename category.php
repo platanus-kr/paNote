@@ -35,7 +35,7 @@ get_header();
 			</section>
 
 			<?php if ( mynote_is_sidebar() ) : ?>
-			<aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">
+			<aside id="aside-container" class="col-lg-3 col-md-3 col-sm-12" role="complementary">
 				<?php get_sidebar( 'archive' ); ?>
 			</aside>
 			<?php endif; ?>

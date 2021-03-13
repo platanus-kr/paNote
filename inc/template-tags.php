@@ -656,15 +656,15 @@ function mynote_main_container_css() {
 
 	if ( is_home() || is_front_page() ) {
 		if ( is_active_sidebar( 'sidebar-6' ) ) {
-			$css_class_string = 'col-lg-8 col-md-8 col-sm-12';
+			$css_class_string = 'col-lg-9 col-md-9 col-sm-12';
 		}
 	} elseif ( is_single() ) {
 		if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-3' ) ) {
-			$css_class_string = 'col-lg-8 col-md-8 col-sm-12';
+			$css_class_string = 'col-lg-9 col-md-9 col-sm-12';
 		}
 	} else {
 		if ( is_active_sidebar( 'sidebar-7' ) ) {
-			$css_class_string = 'col-lg-8 col-md-8 col-sm-12';
+			$css_class_string = 'col-lg-9 col-md-9 col-sm-12';
 		}
 	}
 	echo $css_class_string;
