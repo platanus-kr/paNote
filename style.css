@@ -33,6 +33,11 @@
   text-shadow: none;
 }
 
+/* Homepage post list*/
+article.article-list > h5.card-title {
+  font-size:2.0rem;
+}
+
 /* Single - Post */
 .single-post-header {
   background-color: #fafbfc;
@@ -142,7 +147,7 @@ article figcaption {
   /* outer HL */
 }
 .category-header h1.category:before {
-  content: "\f0c6";
+  /* content: "\f0c6"; */
 }
 .category-header h1.archive:before {
   content: "\f1c6";
