@@ -202,7 +202,7 @@ article figcaption {
   padding: 0;
 }
 .single-post-title-bar .navbar {
-  min-height: 60px;
+  /* min-height: 60px; */
   /* padding: 10px !important; */
 }
 
@@ -312,7 +312,7 @@ article figcaption {
 
 .section-intro {
   width: 100%;
-  min-height: 640px;
+  min-height: 320px;
   background-color: #2b3137;
   color: #ffffff;
   overflow: hidden;
@@ -341,6 +341,7 @@ article figcaption {
 }
 .main-header .section-intro {
   position: relative;
+  padding-top:80px;
 }
 @media (max-width: 767.98px) {
   .main-header .section-intro {
@@ -803,8 +804,8 @@ article figcaption {
   font-weight: 400;
 }
 .section-intro h1 {
-  font-size: 4.5rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 @media (max-width: 767.98px) {
   .section-intro h1 {
@@ -812,7 +813,7 @@ article figcaption {
   }
 }
 .section-intro .desc-text {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 }
 
 /* Typography - Comment */
