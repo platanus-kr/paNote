@@ -49,28 +49,13 @@ do_action( 'mynote_post_comment_before' );
 	<h3 class="section-title">
 		<?php esc_html_e( 'Comments', 'mynote' ); ?>
 	</h3>
-	<div class="discussion-timeline">
-
-		<?php if ( have_comments() ) : ?>
-			<?php wp_list_comments( 'type=comment&callback=mynote_comment' ); ?>
-		<?php endif; ?>
-
-		<?php
-			the_comments_pagination(
-				array(
-					'prev_text' => '<i class="fas fa-angle-left"></i> <span class="screen-reader-text">' . __( 'Previous', 'mynote' ) . '</span>',
-					'next_text' => '<span class="screen-reader-text">' . __( 'Next', 'mynote' ) . '</span> <i class="fas fa-angle-right"></i>',
-				)
-			);
-		?>
-
-		<?php if ( ! comments_open() && get_comments_number() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'mynote' ); ?></p>
-		<?php endif; ?>
-
-		<?php comment_form(); ?>
-
-	</div>
+	<script src="https://utteranc.es/client.js"
+        repo="platanus-kr/stack-comments"
+        issue-term="url"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>	
+	</script>
 </div>
 
 <?php
