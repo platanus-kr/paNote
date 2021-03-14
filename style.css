@@ -301,10 +301,11 @@ article figcaption {
   margin: 0;
   padding: 0 0 20px 0;
   background-image: linear-gradient(
-     to bottom,
-      transparent,
-       rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6),white );
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6),white );
 }
 
 .card-body-footer {
