@@ -278,7 +278,7 @@ article figcaption {
 
 /* Read more fade out effect */
 .card-text-fade-out {
-  height: 180px;
+  /* height: 180px; */
   max-height: 180px;
   position: relative !important;
   overflow: hidden;
@@ -402,7 +402,7 @@ article figcaption {
 }
 .article-list {
   color: #666666;
-  min-height: 250px;
+  /* min-height: 250px; */
   overflow: hidden;
 }
 .article-list a {
