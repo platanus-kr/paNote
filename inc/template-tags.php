@@ -576,7 +576,9 @@ if ( ! function_exists( 'mynote_site_info' ) ) {
 
 		// Keeping the theme credit link encourages me to improve this theme better. Thank you.
 		$theme_link = 'https://terryl.in/';
-		echo esc_html__( 'Theme by', 'mynote' ) . ' <a href="' . esc_url( $theme_link ) . '" target="_blank">' . esc_html__( 'Mynote', 'mynote' ) . '</a>. ';
+		echo esc_html__( 'Theme by', 'mynote' ) . ' <a href="' . esc_url( $fork_link ) . '" target="_blank">' . esc_html__( 'platanus', 'mynote' ) . 
+		$fork_link = 'https://github.com/platanus-kr/paNote';
+		echo esc_html__( 'fork', 'mynote' ) . ' <a href="' . esc_url( $theme_link ) . '" target="_blank">' . esc_html__( 'MyNote', 'mynote' ) .'</a>. ';
 	}
 }
 
