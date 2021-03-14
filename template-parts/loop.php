@@ -36,6 +36,11 @@ do_action( 'mynote_loop_before' );
 									<?php the_title(); ?>
 								</a>
 							</h5>
+							<?php if ( mynote_is_post_card_footer() ) : ?>
+							<div class="card-footer text-muted text-center">
+								<?php mynote_author_posted_date(); ?>
+							</div>
+							<?php endif; ?>
 							<p class="card-text">
 								<?php mynote_excerpt(); ?>
 							</p>
@@ -57,11 +62,7 @@ do_action( 'mynote_loop_before' );
 						<?php endif; ?>
 					</div>
 
-					<?php if ( mynote_is_post_card_footer() ) : ?>
-						<div class="card-footer text-muted text-center">
-							<?php mynote_author_posted_date(); ?>
-						</div>
-					<?php endif; ?>
+
 
 				</div>
 			</article>

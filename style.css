@@ -404,6 +404,7 @@ article figcaption {
   color: #666666;
   /* min-height: 250px; */
   overflow: hidden;
+  padding: 0 20px;
 }
 .article-list a {
   color: #333333;
