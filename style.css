@@ -1945,11 +1945,12 @@ p > object:only-child {
   }
 
   .has-site-logo .header .search-bar {
-    width: 100% !important;
+    display:none;
+    /* width: 100% !important;
     position: absolute;
     margin: 0 !important;
     top: 60px;
-    right: 0;
+    right: 0; */
   }
 
   .p-5 {
