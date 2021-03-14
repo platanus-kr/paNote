@@ -39,6 +39,10 @@ article.article-list h5.card-title {
   font-weight: 700;
 }
 
+.card-author{
+  padding:0 0 20px 0;
+}
+
 /* Single - Post */
 .single-post-header {
   background-color: #fafbfc;
