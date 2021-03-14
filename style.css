@@ -860,7 +860,7 @@ article figcaption {
 }
 
 /* Use the best fit font for different languages */
-:lang(en) body {
+/* :lang(en) body {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
     "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
@@ -950,8 +950,8 @@ article figcaption {
 :lang(ko) .site-info {
   font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
     "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
-}
-/* 
+} */
+
 body {
   font-family: "Noto Sans KR", "-apple-system", "BlinkMacSystemFont",
     "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
@@ -973,7 +973,7 @@ h6 {
   font-family: "Noto Sans KR", "-apple-system", "BlinkMacSystemFont",
     "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
     "맑은 고딕", "Malgun Gothic", "Dotum", "Gulim";
-} */
+}
 
 /* Sidebar widgets */
 .sidebar .widget {
@@ -1397,7 +1397,7 @@ a.btn-info {
 nav[data-toggle="toc"] .nav > li > a {
   display: block;
   padding: 4px 20px;
-  font-size: 14px;
+  /* font-size: 14px; */
   font-weight: 500;
   color: #767676;
 }
@@ -1432,7 +1432,7 @@ nav[data-toggle="toc"] .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
-  font-size: 13px;
+  /* font-size: 13px; */
   font-weight: normal;
 }
 
@@ -1996,7 +1996,7 @@ p > object:only-child {
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #24292e;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   word-wrap: break-word;
 }
