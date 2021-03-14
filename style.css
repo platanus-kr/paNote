@@ -988,7 +988,7 @@ h6 {
 
 /* Sidebar widgets */
 .sidebar .widget {
-  border-bottom: 1px #ddd solid;
+  /* border-bottom: 1px #ddd solid; */
   padding: 10px;
   margin: 0 0 10px 0;
 }
