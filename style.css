@@ -35,7 +35,8 @@
 
 /* Homepage post list*/
 article.article-list h5.card-title {
-  font-size:2.0rem;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 /* Single - Post */
