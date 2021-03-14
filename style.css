@@ -2138,7 +2138,7 @@ p > object:only-child {
   font-weight: bolder;
 }
 .markdown-body h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0.67em 0;
 }
 .markdown-body img {
