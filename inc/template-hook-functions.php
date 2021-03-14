@@ -199,7 +199,7 @@ if ( ! function_exists( 'mynote_homepage_sidebar' ) ) {
 	function mynote_homepage_sidebar() {
 		if ( mynote_is_sidebar() ) {
 			?>
-			<aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">
+			<aside id="aside-container" class="col-lg-3 col-md-3 col-sm-12" role="complementary">
 				<div id="sidebar-home" class="sidebar">
 					<?php dynamic_sidebar( 'sidebar-6' ); ?>
 				</div>
@@ -219,7 +219,7 @@ if ( ! function_exists( 'mynote_archive_sidebar' ) ) {
 	function mynote_archive_sidebar() {
 		if ( mynote_is_sidebar() ) {
 			?>
-			<aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">
+			<aside id="aside-container" class="col-lg-3 col-md-3 col-sm-12" role="complementary">
 				<div id="sidebar-home" class="sidebar">
 					<?php dynamic_sidebar( 'sidebar-7' ); ?>
 				</div>
@@ -239,7 +239,7 @@ if ( ! function_exists( 'mynote_single_post_sidebar' ) ) {
 	function mynote_single_post_sidebar() {
 		if ( mynote_is_sidebar() ) {
 			?>
-			<aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">
+			<aside id="aside-container" class="col-lg-3 col-md-3 col-sm-12" role="complementary">
 				<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 					<div id="sidebar" class="sidebar">
 						<?php dynamic_sidebar( 'sidebar-1' ); ?>
