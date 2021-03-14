@@ -203,7 +203,7 @@ article figcaption {
 }
 .single-post-title-bar .navbar {
   min-height: 60px;
-  padding: 10px !important;
+  /* padding: 10px !important; */
 }
 
 /* Button - go to top. */
@@ -1330,7 +1330,7 @@ a.btn-info {
   z-index: 1020;
 }
 .sticky-top.sidebar {
-  top: 90px !important;
+  top: 60px !important;
 }
 .sticky-top.title {
   top: 5px !important;
@@ -1357,7 +1357,7 @@ a.btn-info {
   position: absolute;
   width: 100%;
   height: 4px;
-  background-color: rgba(214, 168, 168, 0.1);
+  /* background-color: rgba(214, 168, 168, 0.1); */
   border: none;
 }
 .progress-wrapper progress::-moz-progress-bar {
@@ -1387,7 +1387,7 @@ a.btn-info {
   white-space: nowrap;
   word-break: keep-all !important;
   overflow: hidden;
-  line-height: 40px;
+  /* line-height: 40px; */
 }
 
 .has-site-icon #progress-title {
@@ -1432,7 +1432,7 @@ nav[data-toggle="toc"] .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
-  /* font-size: 13px; */
+  font-size: 0.85rem;
   font-weight: normal;
 }
 
