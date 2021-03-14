@@ -37,7 +37,7 @@ do_action( 'mynote_loop_before' );
 								</a>
 							</h5>
 							<?php if ( mynote_is_post_card_footer() ) : ?>
-							<div class="card-footer text-muted text-center">
+							<div class="card-author">
 								<?php mynote_author_posted_date(); ?>
 							</div>
 							<?php endif; ?>
