@@ -1929,6 +1929,9 @@ p > object:only-child {
   .card-body{
     padding: 0;
   }
+  .article-list{
+    padding: 0;
+  }
 }
 /* < 576px */
 @media (max-width: 575.98px) {
@@ -1958,6 +1961,9 @@ p > object:only-child {
   .card-body{
     padding: 0;
   }
+  .article-list{
+    padding: 0;
+  }
 
   .p-5 {
     padding: 0 !important;
@@ -1975,6 +1981,12 @@ p > object:only-child {
   .section-intro .desc-text {
     font-size: 1.1rem;
   }
+  .card-body{
+    padding: 0;
+  }
+  .article-list{
+    padding: 0;
+  }
 }
 /* < 360px */
 @media (max-width: 359.98px) {
@@ -1987,6 +1999,12 @@ p > object:only-child {
   }
   .section-intro .desc-text {
     font-size: 0.95rem;
+  }
+  .card-body{
+    padding: 0;
+  }
+  .article-list{
+    padding: 0;
   }
 }
 .video-container {
