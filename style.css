@@ -1911,6 +1911,10 @@ p > object:only-child {
     display: none;
   }
 
+  .markdown-body {
+    font-size:0.82rem
+  }
+
   .breadcrumb li:last-child {
     width: 50% !important;
   }
