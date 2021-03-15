@@ -1883,7 +1883,7 @@ p > object:only-child {
     background-image: url("./assets/images/bg_circuit_lg.png");
   }
   .section-intro h1 {
-    font-size: 4rem;
+    font-size: 2.2rem;
   }
   .section-intro .desc-text {
     font-size: 1.4rem;
@@ -1921,7 +1921,7 @@ p > object:only-child {
     background-image: url("./assets/images/bg_circuit_md.png");
   }
   .section-intro h1 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
   }
   .section-intro .desc-text {
     font-size: 1.3rem;
@@ -1976,7 +1976,8 @@ p > object:only-child {
   }
   .section-intro h1 {
     margin-top: 20px;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+    font-weight: 700;
   }
   .section-intro .desc-text {
     font-size: 1.1rem;
