@@ -2058,7 +2058,7 @@ p > object:only-child {
   line-height: 1.7;
   color: #24292e;
   /* font-size: 1.2rem; */
-  line-height: 1.5;
+  /* line-height: 1.5; */
   word-wrap: break-word;
 }
 .markdown-body > h1:first-child {
