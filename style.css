@@ -1765,23 +1765,24 @@ p > object:only-child {
   bottom: 50px;
 }
 
-/* > 1200px */
-@media (min-width: 1200px) {
-  .section-intro {
-    background-image: url("./assets/images/bg_circuit.png");
-  }
-  .markdown-body {
-    font-size:1.2rem
-  }
-}
-/* > 1200px */
+
+/* > 1920px */
 @media (min-width: 1920px) {
   .section-intro[style] {
     background-size: cover;
     background-position: center center;
   }
   .markdown-body {
-    font-size:1.2rem
+    font-size:1.0rem
+  }
+}
+/* > 1200px */
+@media (min-width: 1200px) {
+  .section-intro {
+    background-image: url("./assets/images/bg_circuit.png");
+  }
+  .markdown-body {
+    font-size:1.0rem
   }
 }
 /* < 1200px */
@@ -1791,7 +1792,7 @@ p > object:only-child {
     padding-right: 25px !important;
   }
   .markdown-body {
-    font-size:1.2rem
+    font-size:1.0rem
   }
 
 }
@@ -1802,7 +1803,7 @@ p > object:only-child {
     padding-left: 0.5rem;
   }
   .markdown-body {
-    font-size:1.2rem
+    font-size:1.0rem
   }
 }
 /* 992px - 1199.98px */
@@ -1890,7 +1891,7 @@ p > object:only-child {
     right: 76px;
   }
   .markdown-body {
-    font-size:1.2rem
+    font-size:1.0rem
   }
 
 }
@@ -1930,7 +1931,7 @@ p > object:only-child {
   }
 
   .markdown-body {
-    font-size:0.82rem
+    font-size:0.85rem
   }
 
   .breadcrumb li:last-child {
