@@ -35,7 +35,7 @@
 
 /* Homepage post list*/
 article.article-list h5.card-title {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -1926,6 +1926,9 @@ p > object:only-child {
   .section-intro .desc-text {
     font-size: 1.3rem;
   }
+  .card-body{
+    padding: 0;
+  }
 }
 /* < 576px */
 @media (max-width: 575.98px) {
@@ -1951,6 +1954,9 @@ p > object:only-child {
     margin: 0 !important;
     top: 60px;
     right: 0; */
+  }
+  .card-body{
+    padding: 0;
   }
 
   .p-5 {
