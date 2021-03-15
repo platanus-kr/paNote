@@ -1770,12 +1770,18 @@ p > object:only-child {
   .section-intro {
     background-image: url("./assets/images/bg_circuit.png");
   }
+  .markdown-body {
+    font-size:1.2rem
+  }
 }
 /* > 1200px */
 @media (min-width: 1920px) {
   .section-intro[style] {
     background-size: cover;
     background-position: center center;
+  }
+  .markdown-body {
+    font-size:1.2rem
   }
 }
 /* < 1200px */
@@ -1784,12 +1790,19 @@ p > object:only-child {
     padding-left: 25px !important;
     padding-right: 25px !important;
   }
+  .markdown-body {
+    font-size:1.2rem
+  }
+
 }
 /* > 992px */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .menu-item a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+  }
+  .markdown-body {
+    font-size:1.2rem
   }
 }
 /* 992px - 1199.98px */
@@ -1876,6 +1889,10 @@ p > object:only-child {
     top: 15px;
     right: 76px;
   }
+  .markdown-body {
+    font-size:1.2rem
+  }
+
 }
 /* 768px - 991.98px */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1888,6 +1905,7 @@ p > object:only-child {
   .section-intro .desc-text {
     font-size: 1.4rem;
   }
+
 }
 /* < 768px */
 @media (max-width: 767.98px) {
@@ -2037,9 +2055,9 @@ p > object:only-child {
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #24292e;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   line-height: 1.5;
   word-wrap: break-word;
 }
