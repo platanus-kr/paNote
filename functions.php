@@ -53,7 +53,7 @@ if ( ! function_exists( 'mynote_setup_theme' ) ) {
 		$header_args = array(
 			'default-image'          => '',
 			'width'                  => 1920,
-			'height'                 => 640,
+			'height'                 => 320,
 			'flex-width'             => false,
 			'flex-height'            => false,
 			'uploads'                => true,
@@ -70,9 +70,10 @@ if ( ! function_exists( 'mynote_setup_theme' ) ) {
 
 		// Add theme support for Custom Logo.
 		$logo_args = array(
-			'height'      => 60,
-			'width'       => 180,
+			'width'       => 720,
+			'height'      => 240,
 			'flex-width'  => true,
+			'flex-height'  => true,
 		);
 		add_theme_support( 'custom-logo', $logo_args );
 
