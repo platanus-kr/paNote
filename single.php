@@ -70,11 +70,12 @@ get_header();
 							</div>
 						</article>
 
-						<section class="modified-date" itemprop="dateModified" content="<?php the_modified_date( 'c' ); ?>">
-							<?php esc_html_e( 'Last modified: ', 'mynote' ); ?>
-							<?php the_modified_date(); ?>
-						</section>
-
+						<!-- <section class="modified-date" itemprop="dateModified" content="
+						<?php //the_modified_date( 'c' ); ?>
+						"> -->
+							<?php //esc_html_e( 'Last modified: ', 'mynote' ); ?>
+							<?php //the_modified_date(); ?>
+						<!-- </section> -->
 						<section class="tags">
 							<?php the_tags( '', '' ); ?>
 						</section>
