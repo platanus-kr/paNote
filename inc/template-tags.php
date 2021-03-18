@@ -460,7 +460,7 @@ if ( ! function_exists( 'mynote_author_posted_date' ) ) {
 			get_the_author(),
 			get_the_time( 'c' ),
 			sprintf( 
-				_x( ' / post date : %s', '%s', 'mynote' ), 
+				_x( ' / post date %s', '%s', 'mynote' ), 
 				// get_the_date( 'Y, F j (l)' )
 				get_the_date( 'Y.m.d H:i:s A' )
 				// date("Y.m.d",get_the_time( 'U' ))
