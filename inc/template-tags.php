@@ -457,10 +457,10 @@ if ( ! function_exists( 'mynote_author_posted_date' ) ) {
 				esc_html( get_the_date() ), 
 				esc_attr( get_the_time() )
 			),
-			get_the_author(),
+			// get_the_author(),
 			get_the_time( 'c' ),
 			sprintf( 
-				_x( ' / post date %s', '%s', 'mynote' ), 
+				_x( 'ost date %s', '%s', 'mynote' ), 
 				// get_the_date( 'Y, F j (l)' )
 				get_the_date( 'Y.m.d H:i A' )
 				// date("Y.m.d",get_the_time( 'U' ))
