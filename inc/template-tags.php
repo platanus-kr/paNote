@@ -460,8 +460,9 @@ if ( ! function_exists( 'mynote_author_posted_date' ) ) {
 			get_the_author(),
 			get_the_time( 'c' ),
 			sprintf( 
+				
+				_x( ' / 작성일자 %s ago', '%s', 'mynote' ), 
 				date("Y/m/d",get_the_time( 'U' )),
-				_x( ' / written %s ago', '%s', 'mynote' ), 
 				human_time_diff( 
 					get_the_time( 'U' ), 
 					current_time( 'timestamp' )
