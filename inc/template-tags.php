@@ -462,7 +462,7 @@ if ( ! function_exists( 'mynote_author_posted_date' ) ) {
 			sprintf( 
 				_x( ' / post date %s', '%s', 'mynote' ), 
 				// get_the_date( 'Y, F j (l)' )
-				get_the_date( 'Y.m.d H:i:s A' )
+				get_the_date( 'Y.m.d H:i A' )
 				// date("Y.m.d",get_the_time( 'U' ))
 				// human_time_diff(get_the_time( 'U' ), current_time( 'timestamp' ))
 			)
