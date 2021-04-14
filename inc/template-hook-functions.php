@@ -296,15 +296,6 @@ if ( ! function_exists( 'mynote_post_metadata' ) ) {
 						<div class="container">
 
 							<h1 id="post-title" itemprop="headline"><?php the_title(); ?></h1>
-							<div class="post-mynote-buttons">
-
-								<?php if ( mynote_is_sidebar() ) : ?>
-									<?php mynote_column_control_button(); ?>
-								<?php endif; ?>
-
-								<?php mynote_edit_button(); ?>
-								<?php mynote_comment_button(); ?>
-							</div><!-- .post-mynote-buttons -->
 
 							<?php if ( mynote_is_post_author_date() ) : ?>
 								<div class="post-meta">
