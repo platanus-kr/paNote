@@ -280,6 +280,10 @@ article figcaption {
   margin: 20px auto !important;
 }
 
+.card-text {
+  line-height: 1.8;
+}
+
 /* Read more fade out effect */
 .card-text-fade-out {
   /* height: 180px; */
@@ -589,24 +593,24 @@ footer nav style
 
 */
 .nav-links {
-	padding-top: 2em;
-	float: none;
+  padding-top: 2em;
+  float: none;
 }
 
-.nav-links .nav-next{
-	float: right;
-	background: rgb(27, 31, 35, 0.03);
-	padding: 0.85em;
-	border-radius: 1.3rem;
-	border: 1px solid rgba(27, 31, 35, 0.05);
+.nav-links .nav-next {
+  float: right;
+  background: rgb(27, 31, 35, 0.03);
+  padding: 0.85em;
+  border-radius: 1.3rem;
+  border: 1px solid rgba(27, 31, 35, 0.05);
 }
 
-.nav-links .nav-previous{
-	float: left;
-	background: rgb(27, 31, 35, 0.03);
-	padding: 0.85em;
-	border-radius: 1.3rem;
-	border: 1px solid rgba(27, 31, 35, 0.05);
+.nav-links .nav-previous {
+  float: left;
+  background: rgb(27, 31, 35, 0.03);
+  padding: 0.85em;
+  border-radius: 1.3rem;
+  border: 1px solid rgba(27, 31, 35, 0.05);
 }
 
 .footer {
