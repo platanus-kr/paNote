@@ -311,6 +311,34 @@ if ( ! function_exists( 'mynote_post_metadata' ) ) {
 	}
 }
 
+
+if ( ! function_exists( 'mynote_page_metadata' ) ) {
+	/**
+	 * Display post metadata before post's content.
+	 *
+	 * @since  2.0.0
+	 * @return void
+	 */
+	function mynote_page_metadata() {
+		if ( have_posts() ) {
+			while ( have_posts() ) {
+				the_post();
+				mynote_post_breadcrumb();
+
+				?>
+					<div class="single-post-header">
+						<div class="container">
+
+							<h1 id="post-title" itemprop="headline"><?php the_title(); ?></h1>
+
+						</div><!-- .container -->
+					</div><!-- .single-post-header -->
+				<?php
+			}
+		}
+	}
+}
+
 if ( ! function_exists( 'mynote_check_responsive' ) ) {
 	/**
 	 * Check setting about responsive.

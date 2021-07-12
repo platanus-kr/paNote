@@ -117,7 +117,7 @@ add_action( 'mynote_post_sidebar', 'mynote_single_post_sidebar', 10 );
  * 
  * @see  mynote_post_metadata()
  */
-add_action( 'mynote_page_before', 'mynote_post_metadata', 10 );
+add_action( 'mynote_page_before', 'mynote_page_metadata', 10 );
 
 /**
  * Archive
